@@ -1,0 +1,278 @@
+:root {
+    --color-primary: #b72719;
+    --color-primary-light: #D45541;
+    --color-primary-dark: #8B1D13;
+    --color-secondary: #000000;
+    --color-secondary-light: #4D4D4D;
+    --color-secondary-dark: #1A1A1A;
+    --color-accent: #FFFFFF;
+    --color-accent-light: #F0F0F0;
+    --color-accent-dark: #D9D9D9;
+    --color-neutral-light: #333333;
+    --color-neutral-dark: #000000;
+    --color-background: white;
+    --color-background-alt1: #FDECE9;
+    --color-background-alt2: #F0F0F0;
+    --color-background-alt3: #E7E7E7;
+    --color-text-primary: #000000; 
+    --color-text-secondary: #B72719; 
+    --color-text-light: #FFFFFF;
+
+    --font-heading: 'Lora', serif;
+    --font-button: 'Roboto', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+
+    --font-size-base: 16px;
+    --font-size-heading: 2rem;
+    --font-size-subheading: 1.5rem;
+    --font-size-text: 1rem;
+    --font-size-small-text: 0.875rem;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --line-height-base: 1.5;
+    --line-height-heading: 1.2;
+    --line-height-text: 1.6;
+}
+
+body {
+    font-family: var(--font-text);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+    color: var(--color-text-primary);
+}
+
+h1 {
+    font-size: var(--font-size-heading);
+}
+
+h2 {
+    font-size: var(--font-size-subheading);
+}
+
+p {
+    font-size: var(--font-size-text);
+    line-height: var(--line-height-text);
+    color: var(--color-text-primary);
+}
+
+.button, .link {
+    font-family: var(--font-button);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    color: var(--color-text-light);
+    background-color: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.link {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.button:hover, .link:hover {
+    background: radial-gradient(circle, red, black);
+    color: #fff;
+    border: none;
+}
+
+/* Specific styling for Free Assessment Navbar Button */
+
+.navbar {
+    height: 104px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.navbar .btn-primary:hover {
+    background: radial-gradient(circle, var(--color-primary), black);
+    color: #fff;
+    border: none;
+}
+
+/* Specific styling for Hero Section CTA Button */
+.hero-section .btn-primary {
+    background: radial-gradient(circle, var(--color-primary), black); 
+    color: #fff;
+    border: none;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.light-text {
+    color: var(--color-text-light);
+}
+
+.container-fluid {
+    background-color: var(--color-background);
+}
+
+.nav-item a {
+    color: var(--color-text-primary);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-primary);
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-primary);
+}
+
+.navbar-nav {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    transition: width 0.5s, padding 0.5s;
+    overflow: hidden;
+    opacity: 0;
+}
+
+form:hover .search-input {
+    width: 200px;
+    padding: 0.375rem 0.75rem;
+    opacity: 1;
+}
+
+.btn-outline-custom {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--color-neutral-dark);
+    color: var(--color-accent);
+    border-color: var(--color-primary);
+}
+
+.search-icon {
+    color: var(--color-primary);
+}
+
+.btn-outline-custom:hover .search-icon {
+    color: var(--color-accent);
+}
+
+.hero-section {
+    height: calc(100vh - 104px); /* Adjust the height to exclude the navbar */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background: url('landing-page.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+    margin-top: 0;
+}
+
+.grid-container {
+    display: contents;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Add borders to visualize the grid cells */
+}
+
+.top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.bottom-right {
+    grid-column: 8 / 9;
+    grid-row: 8 / 9;
+}
+
+.red-background-section {
+    width: 100%;
+    background-color: var(--color-background-alt1);
+    color: var(--color-text-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+.black-background-header {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    padding: 20px 0;
+}
+
+.container.py-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container.py-5 h1 {
+    color: white;
+}
+
+.container.py-5 h2,
+.container.py-5 p {
+    color: var(--color-text-primary);
+}
+
+.container.py-5 .btn-light {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.container.py-5 .btn-light:hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+    color: var(--color-accent);
+}
+
+.feature-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.feature-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}

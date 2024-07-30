@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Bower;
+}
+
+.hero {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.subheadline {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.cta-button {
+    background: radial-gradient(circle,red, black);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, black, red);
+}
+
+
+.supporting-text {
+    font-size: 1em;
+    margin-bottom: 40px;
+    color: grey;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+    flex: 1;
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.card-cta {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-cta:hover {
+    text-decoration: underline;
+}
+
+.trust-indicators {
+    margin-top: 40px;
+    font-size: 0.9em;
+}
